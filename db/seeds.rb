@@ -50,11 +50,11 @@ solution = (A) => {
 }
 
 
-solution = (K, A) => {
+complementaryPairs = (Target, Number_Array) => {
     let count = 0
-    for (let i = 0; i < A.length; i++) {
-        for (let j = i; j < A.length; j++) {
-            if (A[i] + A[j] === K) {
+    for (let i = 0; i < Number_Array.length; i++) {
+        for (let j = i; j < Number_Array.length; j++) {
+            if (Number_Array[i] + Number_Array[j] === Target) {
                 if (i != j) {
                     count += 2
                 } else {
